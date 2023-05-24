@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class FrmPrincipal
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -27,18 +27,18 @@ Partial Class Form1
         Me.FormulariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CiudadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PersonaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.BackColor = System.Drawing.Color.DarkTurquoise
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivosToolStripMenuItem, Me.FormulariosToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
-        Me.MenuStrip1.TabIndex = 0
+        Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'ArchivosToolStripMenuItem
@@ -57,38 +57,35 @@ Partial Class Form1
         'CiudadToolStripMenuItem
         '
         Me.CiudadToolStripMenuItem.Name = "CiudadToolStripMenuItem"
-        Me.CiudadToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.CiudadToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.CiudadToolStripMenuItem.Text = "Ciudad"
         '
         'PersonaToolStripMenuItem
         '
+        Me.PersonaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReportesToolStripMenuItem})
         Me.PersonaToolStripMenuItem.Name = "PersonaToolStripMenuItem"
-        Me.PersonaToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.PersonaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PersonaToolStripMenuItem.Text = "Persona"
         '
-        'PictureBox1
+        'ReportesToolStripMenuItem
         '
-        Me.PictureBox1.Image = Global.RegistroPersonas.My.Resources.Resources.cliente
-        Me.PictureBox1.Location = New System.Drawing.Point(142, 46)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(535, 378)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
+        Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ReportesToolStripMenuItem.Text = "Reportes"
         '
-        'Form1
+        'FrmPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "Form1"
+        Me.IsMdiContainer = True
+        Me.Name = "FrmPrincipal"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds
         Me.Text = "Registro de Personas"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -99,5 +96,5 @@ Partial Class Form1
     Friend WithEvents FormulariosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CiudadToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PersonaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
 End Class

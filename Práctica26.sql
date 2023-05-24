@@ -23,6 +23,7 @@ create table Persona(
 	, sexo bit default 1 not null
 	, telefono nvarchar(8) not null
 	, email nvarchar(100) not null
+	,idCiudad int  not null
 	, direccion nvarchar(100) not null
 	, estado bit default 'true'
 );
